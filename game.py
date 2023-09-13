@@ -158,6 +158,7 @@ class TheLionKingArcade:
 
     def load_level(self):
         """Załaduj mapę danego poziomu"""
+        self.time_left = 400
         self.lvl_background = pygame.image.load(f"backgrounds/{self.world}-{self.level}.png")
         self.change_music(f"music/{self.world}-{self.level}.mp3")
         path = f"levels/{self.world}-{self.level}.txt"
